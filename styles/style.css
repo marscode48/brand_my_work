@@ -4,6 +4,88 @@
 Stylesheet: ベーススタイル
 
 ******************************************************************/
+body {
+  color: #24292E;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+.font-sm, .header__nav ul li {
+  font-size: 0.8rem;
+}
+
+.font-md, body {
+  font-size: 0.9rem;
+}
+
+.mb-lg {
+  margin-bottom: 70px;
+}
+
+.content-width {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 4%;
+  max-width: 960px;
+}
+
+.header {
+  padding: 0 4%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: auto;
+  margin: 0 auto;
+}
+
+.header__logo {
+  margin-top: 20px;
+}
+
+.header__logo a {
+  display: block;
+}
+
+.header__nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 0;
+  margin: 0;
+}
+
+.header__nav ul li {
+  margin-left: 20px;
+  list-style: none;
+}
+
+.header__nav ul li:first-child {
+  margin: 0;
+}
+
+.header__nav ul li a {
+  color: #24292E;
+}
+
+.header__nav ul li a:hover {
+  opacity: 0.7;
+  text-decoration: none;
+}
+
+.header__nav ul li a img {
+  width: 20px;
+}
+
 @media (min-width: 480px) {
   /******************************************************************
 
