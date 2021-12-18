@@ -105,3 +105,16 @@ img {
     }
   }
 }
+
+.main {
+
+  &__visual {
+    margin-bottom: 80px;
+
+    & img {
+      height: 420px;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}

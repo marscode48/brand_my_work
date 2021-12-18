@@ -86,6 +86,17 @@ img {
   width: 20px;
 }
 
+.main__visual {
+  margin-bottom: 80px;
+}
+
+.main__visual img {
+  height: 420px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 @media (min-width: 480px) {
   /******************************************************************
 
