@@ -97,6 +97,10 @@ img {
      object-fit: cover;
 }
 
+.main__inner {
+  padding: 0 4%;
+}
+
 @media (min-width: 480px) {
   /******************************************************************
 
