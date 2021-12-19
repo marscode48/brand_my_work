@@ -21,15 +21,26 @@ img {
   font-size: 0.9rem;
 }
 
-.mb-lg {
+.font-lg, .main-title {
+  font-size: 1.5rem;
+}
+
+.mb-lg, .main__about, .main__works, .main__news, .main__contact {
   margin-bottom: 70px;
 }
 
-.content-width {
+.content-width, .main__inner {
   width: 100%;
   margin: 0 auto;
   padding: 0 4%;
   max-width: 960px;
+}
+
+.main-title {
+  font-weight: 700;
+  margin-bottom: 40px;
+  display: block;
+  text-align: center;
 }
 
 .header {
@@ -61,7 +72,7 @@ img {
   display: -ms-flexbox;
   display: flex;
   padding: 10px 0;
-  margin: 0;
+  margin-bottom: 30px;
 }
 
 .header__nav ul li {
@@ -95,6 +106,89 @@ img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.main__about ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 30px;
+}
+
+.main__about ul li:first-child {
+  margin-bottom: 30px;
+}
+
+.main__about p {
+  margin: 0;
+  text-align: justify;
+}
+
+.main__works ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 50px;
+}
+
+.main__works ul li {
+  margin-bottom: 23px;
+}
+
+.main__news dl {
+  border-top: 1px solid #C8C8C8;
+  margin-bottom: 20px;
+}
+
+.main__news dl dt {
+  font-weight: 400;
+  padding: 15px 15px 0;
+}
+
+.main__news dl dd {
+  padding: 0 15px 15px;
+  border-bottom: 1px solid #C8C8C8;
+  margin: 0;
+}
+
+.main__contact form dl {
+  margin-bottom: 20px;
+}
+
+.main__contact form dl dt label {
+  font-weight: 400;
+  margin: 0;
+}
+
+.main__contact form dl dd input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #C8C8C8;
+}
+
+.main__contact form dl dd textarea {
+  width: 100%;
+  border: 1px solid #C8C8C8;
+  height: 160px;
+  padding: 10px;
+}
+
+.main__contact form .button {
+  text-align: center;
+}
+
+.main__contact form .button input {
+  width: 200px;
+  background-color: #24292E;
+  color: white;
+  padding: 15px 0;
+  border: 1px solid #24292E;
+}
+
+.main__contact form .button input:hover {
+  background-color: white;
+  color: #24292E;
 }
 
 @media (min-width: 480px) {
