@@ -12,7 +12,7 @@ img {
   vertical-align: bottom;
 }
 .font-sm {
-  font-size: 0.8rem;
+  font-size: 0.5rem;
 }
 .font-md {
   font-size: 0.9rem;
@@ -224,6 +224,21 @@ img {
           }
         }
       }
+    }
+  }
+}
+
+.footer {
+  
+  &__inner {
+    padding: 10px 0;
+    text-align: center;
+    background-color: $cBlack;
+    color: $cWhite;
+    font-size: 0.5rem;
+
+    & p {
+      margin: 0;
     }
   }
 }

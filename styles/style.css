@@ -14,7 +14,7 @@ img {
 }
 
 .font-sm, .header__nav ul li {
-  font-size: 0.8rem;
+  font-size: 0.5rem;
 }
 
 .font-md, body {
@@ -189,6 +189,18 @@ img {
 .main__contact form .button input:hover {
   background-color: white;
   color: #24292E;
+}
+
+.footer__inner {
+  padding: 10px 0;
+  text-align: center;
+  background-color: #24292E;
+  color: white;
+  font-size: 0.5rem;
+}
+
+.footer__inner p {
+  margin: 0;
 }
 
 @media (min-width: 480px) {
