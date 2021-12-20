@@ -3,48 +3,52 @@
 Stylesheet: ベーススタイル
 
 ******************************************************************/
-// body {
-//   font-family: "Kameron", "Noto Sans JP", sans-serif;
-// }
-// img {
-//   max-width: 100%;
-//   vertical-align: bottom;
-// }
-// .font-sm {
-//   font-size: 14px;
-// }
-// .font-md {
-//   font-size: 17px;
-// }
+body {
+  color: $cBlack;
+  @extend .font-md;
+}
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+  width: 100%;
+}
+.font-sm {
+  font-size: 0.5rem;
+}
+.font-md {
+  font-size: 0.9rem;
+}
 // .font-lr {
 //   font-size: 17px;
 // }
-// .font-lg {
-//   font-size: 25px;
-// }
+.font-lg {
+  font-size: 1.5rem;
+}
 // .mb-sm {
-//   margin-bottom: 16px !important;
+//   margin-bottom: 30px;
 // }
-// .mb-lg {
-//   margin-bottom: 80px !important;
-// }
+.mb-lg {
+  margin-bottom: 70px;
+}
 // .pb-sm {
 //   padding-bottom: 16px !important;
 // }
 // .pb-lg {
 //   padding-bottom: 80px !important;
 // }
-// .content-width {
-//   width: 90%;
-//   margin: 0 auto;
-//   max-width: $contentMaxWidth;
-// }
-// .main-title {
-//   @extend .font-lg;
-//   font-weight: 600;
-//   margin-bottom: 0;
-//   display: block;
-// }
+.content-width {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 4%;
+  max-width: $contentMaxWidth;
+}
+.main-title {
+  @extend .font-lg;
+  font-weight: 700;
+  margin-bottom: 40px;
+  display: block;
+  text-align: center;
+}
 // .sub-title {
 //   @extend .font-sm;
 //   color: $cSubTitle;
@@ -53,4 +57,190 @@ Stylesheet: ベーススタイル
 //   display: flex;
 //   flex-direction: column;
 // }
+
+.header {
+  padding: 0 4%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  margin: 0 auto;
+
+  
+  &__logo {
+    margin-top: 20px;
+    
+    & a {
+      display: block;
+    }
+  }
+  
+  &__nav {
+    
+    & ul {
+      display: flex;
+      padding: 10px 0;
+      margin-bottom: 30px;
+
+      & li {
+        margin-left: 20px;
+        list-style: none;
+        @extend .font-sm;
+
+        &:first-child {
+          margin: 0;
+        }
+
+        & a {
+          color: $cBlack;
+
+          &:hover {
+            opacity: 0.7;
+            text-decoration: none;
+          }
+        }
+
+        & a img {
+          width: 20px;
+        }
+      }
+    }
+  }
+}
+
+.main {
+
+  &__visual {
+    margin-bottom: 80px;
+
+    & img {
+      height: 420px;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__inner {
+    @extend .content-width;
+  }
+
+  &__about {
+    @extend .mb-lg;
+
+    & ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      margin-bottom: 30px;
+
+      & li:first-child {
+        margin-bottom: 30px;
+      }
+    }
+
+    & p {
+      margin: 0;
+      text-align: justify;
+    }
+  }
+
+  &__works {
+    @extend .mb-lg;
+
+    & ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      margin-bottom: 50px;
+
+      & li {
+        margin-bottom: 23px;
+      }
+    }
+  }
+
+  &__news {
+    @extend .mb-lg;
+
+    & dl {
+      border-top: 1px solid #C8C8C8;
+      margin-bottom: 20px;
+
+      & dt {
+        font-weight: 400;
+        padding: 15px 15px 0;
+      }
+
+      & dd {
+        padding: 0 15px 15px;
+        border-bottom: 1px solid #C8C8C8;
+        margin: 0;
+      }
+    }
+  }
+
+  &__contact {
+
+    @extend .mb-lg;
+
+    & form {
+
+      & dl {
+        margin-bottom: 20px;
+
+        & dt label {
+          font-weight: 400;
+          margin: 0;
+        }
+
+        & dd input {
+          width: 100%;
+          padding: 10px;
+          margin-bottom: 10px;
+          border: 1px solid #C8C8C8;
+        }
+
+        & dd textarea {
+          width: 100%;
+          border: 1px solid #C8C8C8;
+          height: 160px;
+          padding: 10px;
+
+        }
+      }
+
+      & .button {
+        text-align: center;
+
+        & input {
+          width: 200px;
+          background-color: $cBlack;
+          color: $cWhite;
+          padding: 15px 0;
+          border: 1px solid $cBlack;
+
+          &:hover {
+            background-color: $cWhite;
+            color: $cBlack;
+          }
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  
+  &__inner {
+    padding: 10px 0;
+    text-align: center;
+    background-color: $cBlack;
+    color: $cWhite;
+    font-size: 0.5rem;
+
+    & p {
+      margin: 0;
+    }
+  }
+}
 

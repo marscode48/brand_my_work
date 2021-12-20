@@ -4,6 +4,206 @@
 Stylesheet: ベーススタイル
 
 ******************************************************************/
+body {
+  color: #24292E;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+  width: 100%;
+}
+
+.font-sm, .header__nav ul li {
+  font-size: 0.5rem;
+}
+
+.font-md, body {
+  font-size: 0.9rem;
+}
+
+.font-lg, .main-title {
+  font-size: 1.5rem;
+}
+
+.mb-lg, .main__about, .main__works, .main__news, .main__contact {
+  margin-bottom: 70px;
+}
+
+.content-width, .main__inner {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 4%;
+  max-width: 960px;
+}
+
+.main-title {
+  font-weight: 700;
+  margin-bottom: 40px;
+  display: block;
+  text-align: center;
+}
+
+.header {
+  padding: 0 4%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: auto;
+  margin: 0 auto;
+}
+
+.header__logo {
+  margin-top: 20px;
+}
+
+.header__logo a {
+  display: block;
+}
+
+.header__nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 0;
+  margin-bottom: 30px;
+}
+
+.header__nav ul li {
+  margin-left: 20px;
+  list-style: none;
+}
+
+.header__nav ul li:first-child {
+  margin: 0;
+}
+
+.header__nav ul li a {
+  color: #24292E;
+}
+
+.header__nav ul li a:hover {
+  opacity: 0.7;
+  text-decoration: none;
+}
+
+.header__nav ul li a img {
+  width: 20px;
+}
+
+.main__visual {
+  margin-bottom: 80px;
+}
+
+.main__visual img {
+  height: 420px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.main__about ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 30px;
+}
+
+.main__about ul li:first-child {
+  margin-bottom: 30px;
+}
+
+.main__about p {
+  margin: 0;
+  text-align: justify;
+}
+
+.main__works ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 50px;
+}
+
+.main__works ul li {
+  margin-bottom: 23px;
+}
+
+.main__news dl {
+  border-top: 1px solid #C8C8C8;
+  margin-bottom: 20px;
+}
+
+.main__news dl dt {
+  font-weight: 400;
+  padding: 15px 15px 0;
+}
+
+.main__news dl dd {
+  padding: 0 15px 15px;
+  border-bottom: 1px solid #C8C8C8;
+  margin: 0;
+}
+
+.main__contact form dl {
+  margin-bottom: 20px;
+}
+
+.main__contact form dl dt label {
+  font-weight: 400;
+  margin: 0;
+}
+
+.main__contact form dl dd input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #C8C8C8;
+}
+
+.main__contact form dl dd textarea {
+  width: 100%;
+  border: 1px solid #C8C8C8;
+  height: 160px;
+  padding: 10px;
+}
+
+.main__contact form .button {
+  text-align: center;
+}
+
+.main__contact form .button input {
+  width: 200px;
+  background-color: #24292E;
+  color: white;
+  padding: 15px 0;
+  border: 1px solid #24292E;
+}
+
+.main__contact form .button input:hover {
+  background-color: white;
+  color: #24292E;
+}
+
+.footer__inner {
+  padding: 10px 0;
+  text-align: center;
+  background-color: #24292E;
+  color: white;
+  font-size: 0.5rem;
+}
+
+.footer__inner p {
+  margin: 0;
+}
+
 @media (min-width: 480px) {
   /******************************************************************
 
@@ -26,6 +226,94 @@ Stylesheet: 600px以上のタブレットやモニタで適用
 Stylesheet: 960px以上のモニタで適用
 
 ******************************************************************/
+  .header {
+    max-width: 960px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 270px;
+  }
+  .header__logo {
+    margin: 0;
+  }
+  .header__nav ul {
+    margin: 0;
+  }
+  .header__nav ul li {
+    margin-left: 30px;
+    font-size: 0.9rem;
+  }
+  .main img {
+    max-width: 1920px;
+  }
+  .main .main-title {
+    margin-bottom: 65px;
+  }
+  .main__about {
+    margin-bottom: 130px;
+  }
+  .main__works {
+    margin-bottom: 130px;
+  }
+  .main__works ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 50px;
+  }
+  .main__works ul li {
+    width: 31%;
+  }
+  .main__news {
+    margin-bottom: 130px;
+  }
+  .main__news dl {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .main__news dl dt {
+    width: 20%;
+    padding: 15px;
+    border-bottom: 1px solid #C8C8C8;
+  }
+  .main__news dl dd {
+    width: 80%;
+    padding: 15px;
+  }
+  .main__contact {
+    margin-bottom: 130px;
+  }
+  .main__contact form dl {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .main__contact form dl dt {
+    width: 15%;
+  }
+  .main__contact form dl dd {
+    width: 75%;
+  }
 }
 
 @media (min-width: 1280px) {
