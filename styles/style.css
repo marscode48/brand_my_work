@@ -11,6 +11,7 @@ body {
 img {
   max-width: 100%;
   vertical-align: bottom;
+  width: 100%;
 }
 
 .font-sm, .header__nav ul li {
@@ -225,6 +226,94 @@ Stylesheet: 600px以上のタブレットやモニタで適用
 Stylesheet: 960px以上のモニタで適用
 
 ******************************************************************/
+  .header {
+    max-width: 960px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 270px;
+  }
+  .header__logo {
+    margin: 0;
+  }
+  .header__nav ul {
+    margin: 0;
+  }
+  .header__nav ul li {
+    margin-left: 30px;
+    font-size: 0.9rem;
+  }
+  .main img {
+    max-width: 1920px;
+  }
+  .main .main-title {
+    margin-bottom: 65px;
+  }
+  .main__about {
+    margin-bottom: 130px;
+  }
+  .main__works {
+    margin-bottom: 130px;
+  }
+  .main__works ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 50px;
+  }
+  .main__works ul li {
+    width: 31%;
+  }
+  .main__news {
+    margin-bottom: 130px;
+  }
+  .main__news dl {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .main__news dl dt {
+    width: 20%;
+    padding: 15px;
+    border-bottom: 1px solid #C8C8C8;
+  }
+  .main__news dl dd {
+    width: 80%;
+    padding: 15px;
+  }
+  .main__contact {
+    margin-bottom: 130px;
+  }
+  .main__contact form dl {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .main__contact form dl dt {
+    width: 15%;
+  }
+  .main__contact form dl dd {
+    width: 75%;
+  }
 }
 
 @media (min-width: 1280px) {
